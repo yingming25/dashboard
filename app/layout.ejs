@@ -1,64 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<body>
+  <div class="d-flex">
+    <aside class="sidebar vh-100 d-flex flex-column py-5 bg-primary">
+      <h1 class="logo mb-5 pl-5"><a href="#"></a></h1>
+      <ul class="menu">
+        <li>
+          <a href="#" class="font-weight-bold"><i class="material-icons mr-3">insert_chart</i>Dashboard</a>
+        </li>
+        <li>
+          <a href="#" class="font-weight-bold"><i class="material-icons mr-3">forum</i>Question</a>
+        </li>
+        <li>
+          <a href="assignment.html" class="font-weight-bold"><i class="material-icons mr-3">assignment</i>Assignment</a>
+        </li>
+        <li>
+          <a href="#" class="font-weight-bold"><i class="material-icons mr-3">video_library</i>Course</a>
+        </li>
+        <li>
+          <a href="admin.html" class="font-weight-bold"><i class="material-icons mr-3">supervisor_account</i>Admin</a>
+        </li>
+        <li>
+          <a href="#" class="font-weight-bold"><i class="material-icons mr-3">settings</i>Settings</a>
+        </li>
+      </ul>
+      <div class="user d-flex align-items-center mt-auto pl-5">
+        <img src="./assets/images/andychen.jpeg" alt="" class="user__avatar">
+        <div class="user__detail ml-3">
+          <p class="user__detail__name mb-1">Andy Chen</p>
+          <p class="user__detail__other mb-0">andy0401@mail.com</p>
+        </div>
       </div>
-    </nav>
+    </aside>
 
     <%- contents %>
 
-    <footer class="footer">
-      footer
-    </footer>
-
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
 
 </html>
