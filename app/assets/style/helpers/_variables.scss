@@ -15,7 +15,7 @@ $gray-600: rgba(112, 112, 112, 1) !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #000000 !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -80,7 +80,6 @@ $danger:        $pink !default;
 $light:         $gray-100 !default;
 $dark:          $gray-500 !default;
 $dark2:         $gray-600 !default;
-$background:    $green-lighter !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -93,7 +92,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "dark2":      $dark2
   ),
   $theme-colors
 );
